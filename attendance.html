@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container mx-auto p-4">
+    <div class="flex justify-between text-center">
+      <div class="bg-blue-500 text-white rounded-lg px-10 py-2">
+        <h2 class="text-lg font-bold">Total classes</h2>
+        <p class="text-3xl font-bold">500</p>
+      </div>
+      <div class="bg-green-500 text-white rounded-lg px-20 py-2">
+        <h2 class="text-lg font-bold">Present</h2>
+        <p class="text-3xl font-bold">250</p>
+      </div>
+      <div class="bg-red-500 text-white rounded-lg px-16 py-2">
+        <h2 class="text-lg font-bold">Absent</h2>
+        <p class="text-3xl font-bold">50</p>
+      </div>
+    </div>
+  </div>
+    <div class="container mx-auto">
+        <table class="table-auto border">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 border">Sr.</th>
+              <th class="px-4 py-2 border">Date</th>
+              <th class="px-4 py-2 border">Conducted</th>
+              <th class="px-4 py-2 text-green border">Present</th>
+              <th class="px-4 py-2 border">Absent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border">1</td>
+              <td class="px-4 py-2 border">2023-05-31</td>
+              <td class="px-4 py-2 border">Yes</td>
+              <td class="px-4 py-2 text-green-800 border">Yes</td>
+              <td class="px-4 py-2 text-red-800 border">-</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border">2</td>
+              <td class="px-4 py-2 border">2023-06-01</td>
+              <td class="px-4 py-2 border">Yes</td>
+              <td class="px-4 py-2 text-green-800  border">-</td>
+              <td class="px-4 py-2 text-red-800 border">Yes</td>
+            </tr>
+            <tr>
+                <td class="px-4 py-2 border">2</td>
+                <td class="px-4 py-2 border">2023-06-01</td>
+                <td class="px-4 py-2 border">No</td>
+                <td class="px-4 py-2 text-green-800  border">-</td>
+                <td class="px-4 py-2 text-red-800 border">-</td>
+              </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+      
+</body>
+</html>

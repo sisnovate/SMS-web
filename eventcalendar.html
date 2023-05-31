@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay'
+        },
+        defaultDate: '2023-01-01',
+        editable: false,
+        eventLimit: true, // allow "more" link when too many events
+        events: [
+          {
+            title: 'Event 1',
+            start: '2023-01-15'
+          },
+          {
+            title: 'Event 2',
+            start: '2023-02-10'
+          },
+          {
+            title: 'Event 3',
+            start: '2023-03-20'
+          },
+          {
+            title: 'Event 4',
+            start: '2023-04-05'
+          },
+          {
+            title: 'Event 5',
+            start: '2023-05-12'
+          },
+          {
+            title: 'Event 6',
+            start: '2023-06-25'
+          },
+          {
+            title: 'Event 7',
+            start: '2023-07-18'
+          },
+          {
+            title: 'Event 8',
+            start: '2023-08-30'
+          },
+          {
+            title: 'Event 9',
+            start: '2023-09-08'
+          },
+          {
+            title: 'Event 10',
+            start: '2023-10-17'
+          },
+          {
+            title: 'Event 11',
+            start: '2023-11-22'
+          },
+          {
+            title: 'Event 12',
+            start: '2023-12-10'
+          }
+        ]
+      });
+    });
+  </script>
+  <style>
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="calendar"></div>
+</body>
+</html>
